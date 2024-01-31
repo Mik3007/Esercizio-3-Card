@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: gray;
+  font-size: 30px;
+  font-family: "Nunito Sans", sans-serif;
+  
+}
+.pinterest-card {
+  position: relative;
+  background-image: url(assets/maradona25.jpg);
+  background-size: cover;
+  width: 490px;
+  height: 765px;
+  margin: 400px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.icon-save {
+  position: absolute;
+  top: -82px;
+  right: 15px;
+  background-color: red;
+  color: white;
+  padding: 20px;
+  border-radius: 40px;
+  transition: top 0.8s ease-in-out;
+  transition: box-shadow;
+}
+.pinterest-card:hover .icon-save {
+  top: 15px;
+  cursor: pointer;
+  opacity: 1;
+}
+.pinterest-card:hover {
+    opacity: 0.8;
+}
+
+
+.button-bottom .icon-ellipsis,
+.icon-arrow-bracket,
+.icon-arrow-up {
+  position: absolute;
+  bottom: -85px;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 50px;
+  transition: bottom 0.8s;
+  opacity: 0.7;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.icon-ellipsis {
+  position: absolute;
+  right: 15px;
+  font-size: 100%;
+}
+.icon-arrow-bracket {
+  position: absolute;
+  right: 110px;
+}
+.icon-arrow-up {
+  left: 15px;
+  width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bolder;
+}
+.pinterest-card:hover .icon-ellipsis {
+  bottom: 15px;
+}
+.pinterest-card:hover .icon-arrow-bracket {
+  bottom: 15px;
+}
+.pinterest-card:hover .icon-arrow-up {
+  bottom: 15px;
+}
